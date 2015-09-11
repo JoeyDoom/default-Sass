@@ -1,0 +1,36 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// Image replacement
+
+@mixin img-replace($img, $w, $h, $disp: block)
+	background-image: url('#{$path--rel}/#{$img}')
+	background-repeat: no-repeat
+	width: $w
+	height: $h
+	display: $disp
+
+
+
+// Media Queries
+
+@mixin phone
+	@media (max-width: $tablet-width - 1px)
+		@content
+
+@mixin tablet
+	@media (max-width: $desktop-width - 1px)
+		@content
+
+@mixin desktop
+	@media (min-width: $desktop-width)
+		@content
+
+
+//UI Color Background Theme
+
+@mixin bg-colors($map)
+	@each $theme, $color in $map
+		&--#{$theme}
+			background-color: $color
