@@ -5,13 +5,11 @@
 // Image replacement
 
 @mixin img-replace($img, $w, $h, $disp: block)
-	background-image: url('#{$path--rel}/#{$img}')
+	background-image: url('#{$path}/#{$img}')
 	background-repeat: no-repeat
 	width: $w
 	height: $h
 	display: $disp
-
-
 
 // Media Queries
 
@@ -26,7 +24,6 @@
 @mixin desktop
 	@media (min-width: $desktop-width)
 		@content
-
 
 //UI Color Background Theme
 
