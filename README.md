@@ -22,3 +22,5 @@ Just make a new branch and go nuts. Don't merge things to the master until we ge
 
 * Potential issue with Sass maps and .sass syntax. Haven't tested it out yet
 * Don't know if we care to adjust all of the default colors to things that we like better just because.
+* None of the grid system stuff is in there yet.
+* Can probably work out the media query stuff better in the future.
