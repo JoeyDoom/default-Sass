@@ -31,3 +31,10 @@
 	@each $theme, $color in $map
 		&--#{$theme}
 			background-color: $color
+
+// Adjacent sibling margins
+
+@mixin doubly ($margin: 1em)
+	& + &
+		margin-left: $margin
+		@content
