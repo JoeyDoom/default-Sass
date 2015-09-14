@@ -11,19 +11,21 @@
 	height: $h
 	display: $disp
 
+
 // Media Queries
 
-@mixin phone
-	@media (max-width: $tablet-width - 1px)
-		@content
-
-@mixin tablet
-	@media (max-width: $desktop-width - 1px)
-		@content
-
-@mixin desktop
-	@media (min-width: $desktop-width)
-		@content
+@mixin mq($break)
+	@if $break == "small"
+		@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md)
+			@content
+	@else if $break == "medium"
+		@media (min-width: $breakpoint-md + 1)
+			@content
+	@else if $break == "large"
+		@media (min-width: $breakpoint-lg)
+			@content
+	@else
+		@error "That's not a valid breakpoint value idiot"
 
 //UI Color Background Theme
 
@@ -38,3 +40,15 @@
 	& + &
 		margin-left: $margin
 		@content
+
+// Grid Columns
+
+@mixin g-columns
+	@for $i from 1 through $g-col-count
+
+			$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global
+			$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1))
+			
+			// Generate column modifier classes
+			&--#{$i}
+				width: percentage($target / $context)
