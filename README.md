@@ -24,7 +24,9 @@ Just make a new branch and go nuts. Don't merge things to the master until we ge
 
 ### Current Issues ###
 
+* Haven't tried to compile any of this yet. It could be riddled with errors.
 * Potential issue with Sass maps and .sass syntax. Haven't tested it out yet
 * Don't know if we care to adjust all of the default colors to things that we like better just because.
 * Unsure if we're going to actually use the states stuff.
 * Unsure if I want to keep using this grid system or something pre-made by someone else. We can try this out and see how it goes though.
+* I don't totally know how the grid system stuff handles responsive things yet
