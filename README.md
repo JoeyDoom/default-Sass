@@ -13,7 +13,8 @@ Check out the Treehouse course that this was based on for more info http://teamt
 * **/modules/_extends.sass** - SASS placeholders for all kinds of site specific values
 * **/layout/** - Grid system specific stuff configuration
 * **/states/** - Styles for different states of elements (hidden/collapsed/etc)
-* **main.css** - The final outputted SASS file.
+* **app.sass** - the main sass file. this just imports all of the others.
+* **app.css** - The final outputted SASS file.
 
 ### Grid System Instructions
 (Coming Soon)
@@ -24,7 +25,6 @@ Just make a new branch and go nuts. Don't merge things to the master until we ge
 
 ### Current Issues ###
 
-* Haven't tried to compile any of this yet. It could be riddled with errors.
 * Potential issue with Sass maps and .sass syntax. Haven't tested it out yet
 * Don't know if we care to adjust all of the default colors to things that we like better just because.
 * Unsure if we're going to actually use the states stuff.
