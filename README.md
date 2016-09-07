@@ -1,6 +1,6 @@
-# Black Axe SASS Defaults #
+# SASS Defaults #
 
-Default set of files to use for new projects. This is still a work in progress. Feel free to contribute any changes that you think will help us out whenever you want.
+Default set of files to use for new projects. This is still a work in progress. 
 
 Check out the Treehouse course that this was based on for more info http://teamtreehouse.com/library/modular-css-with-sass
 
@@ -19,14 +19,10 @@ Check out the Treehouse course that this was based on for more info http://teamt
 ### Grid System Instructions
 (Coming Soon)
 
-### What if I want to add stuff? ###
-
-Just make a new branch and go nuts. Don't merge things to the master until we get some time to go over it or whatever.
-
 ### Current Issues ###
 
 * Potential issue with Sass maps and .sass syntax. Haven't tested it out yet
-* Don't know if we care to adjust all of the default colors to things that we like better just because.
+* Don't know if I care to adjust all of the default colors to things that I like better just because.
 * Unsure if we're going to actually use the states stuff.
-* Unsure if I want to keep using this grid system or something pre-made by someone else. We can try this out and see how it goes though.
+* Unsure if I want to keep using this grid system or something pre-made by someone else. 
 * I don't totally know how the grid system stuff handles responsive things yet
